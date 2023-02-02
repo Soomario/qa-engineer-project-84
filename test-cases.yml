@@ -150,10 +150,62 @@
       expected-result: |
       - Сайт не отоброжается
       ---
-    
-    
-     
-     
-     
-     
-    
+    - summary: |
+     Проверка сайта на Smasung galxy S22 в браузере Crome
+     requirement: |
+     Сайт отоброжается на телефоне
+     prerequisites:
+     Сайт открыт на Smasung galxy S22 в браузере Crome
+     test-data: |
+    Smasung galxy S22 Версия андроид 12
+     steps: |
+     - Открываем браузер Crome 
+     - Вводим в адресную строку https://hexlet-products-store.vercel.app/
+     - жмём "Enter"
+      expected-result: |
+      - Сайт отоброжается
+      
+    - summary: |
+     Проверка сайта на Smasung galxy S22 в браузере Crome
+     requirement: |
+     Сайт не отоброжается на телефоне
+     prerequisites:
+     Сайт открыт на Smasung galxy S22 в браузере Crome
+     test-data: |
+    Smasung galxy S22 Версия андроид 12
+     steps: |
+     - Открываем браузер Crome 
+     - Вводим в адресную строку https://hexlet-products-store.vercel.app/
+     - жмём "Enter"
+      expected-result: |
+      - Сайт не отоброжается
+     --- 
+      - summary: |
+     Проверка сайта на IPhone 14 в браузере Safari
+     requirement: |
+     Сайт отоброжается на телефоне
+     prerequisites:
+     Сайт открыт на IPhone 14 в браузере Safari
+     test-data: |
+     IPhone 14 Версия IOS 16
+     steps: |
+     - Открываем браузер Safari 
+     - Вводим в адресную строку https://hexlet-products-store.vercel.app/
+     - жмём "Enter"
+      expected-result: |
+      - Сайт отоброжается
+      
+      - summary: |
+     Проверка сайта на IPhone 14 в браузере Safari
+     requirement: |
+     Сайт не отоброжается на телефоне
+     prerequisites:
+     Сайт открыт на IPhone 14 в браузере Safari
+     test-data: |
+     IPhone 14 Версия IOS 16
+     steps: |
+     - Открываем браузер Safari 
+     - Вводим в адресную строку https://hexlet-products-store.vercel.app/
+     - жмём "Enter"
+      expected-result: |
+      - Сайт НЕ отоброжается
