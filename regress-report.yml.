@@ -8,7 +8,13 @@
     status: pass
 ---
   - summary: |
-     Проверка сайта на последней версией (Crome) (Firefox) (Opera)
+     Проверка сайта на последней версией Crome
+     status: pass
+      - summary: |
+     Проверка сайта на последней версией Firefox
+     status: pass
+      - summary: |
+     Проверка сайта на последней версией Opera
      status: pass
 ---  
  - summary: |
@@ -29,8 +35,8 @@ bugreports:
     environment: |
       Google Chrome Версия 109.0.5414.120 (Официальная сборка) (64 бит) Windows 11
     steps-to-reproduce: |
-      1. Заходим на сайт Магазин
-      2. Жмем на кнопку категории
+      1. Заходим на сайт Магазина
+      2. Жмем на кнопку "категории"
     expected-result: |
       НЕТ пустой строки
     actual-result: |
