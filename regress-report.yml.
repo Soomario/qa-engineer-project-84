@@ -3,11 +3,11 @@
     Проверка входа пользователя с существующими логином и паролем
     status: fail
 ---
-- summary: |
+ - summary: |
     Проверка фильтра по цене
     status: pass
 ---
-  - summary: |
+   - summary: |
      Проверка сайта на последней версией Crome
      status: pass
       - summary: |
@@ -21,16 +21,16 @@
      Проверка фильтра сайта на отсутствующие числа
      status: pass
 ---
-- summary: |
+ - summary: |
      Проверка сайта на Smasung galxy S22 в браузере Crome
      status: pass
 ---
-- summary: |
+ - summary: |
      Проверка сайта на IPhone 14 в браузере Safari
      status: pass
 ---
 bugreports:
-  - summary: |
+ - summary: |
       В меню категории появилась пустая строка
     environment: |
       Google Chrome Версия 109.0.5414.120 (Официальная сборка) (64 бит) Windows 11
@@ -41,3 +41,4 @@ bugreports:
       НЕТ пустой строки
     actual-result: |
       Есть пустая строка
+      
