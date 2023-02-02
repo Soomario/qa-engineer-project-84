@@ -1,36 +1,58 @@
 ---
-- summary:  |
-    Проверка входа пользователя с существующими логином и паролем
+ - summary:  |
+    Проверка успешной авторизации с существующими логином и паролем
+    status: fail
+    
+  - summary: |
+    Проверка успешной авторизацией с несуществующими логином и паролем
     status: fail
 ---
- - summary: |
+  - summary: |
     Проверка фильтра по цене
     status: pass
----
-   - summary: |
-     Проверка сайта на последней версией Crome
-     status: pass
-      - summary: |
-     Проверка сайта на последней версией Firefox
-     status: pass
-      - summary: |
-     Проверка сайта на последней версией Opera
-     status: pass
----  
- - summary: |
+    
+  - summary: |
      Проверка фильтра сайта на отсутствующие числа
      status: pass
 ---
- - summary: |
+  - summary: |
+     Проверка сайта на последней версией Crome
+     status: pass
+     
+  - summary: |
+     Проверка сайта на последней версией Crome
+     status: fail
+---
+  - summary: |
+     Проверка сайта на последней версией Firefox
+     status: pass
+  - summary: |
+     Проверка сайта на последней версией Firefox
+     status: fail
+---
+  - summary: |
+     Проверка сайта на последней версией Opera
+      status: pass
+  - summary: |
+     Проверка сайта на последней версией Opera
+      status: fail
+---
+  - summary: |
      Проверка сайта на Smasung galxy S22 в браузере Crome
      status: pass
+  - summary: |
+     Проверка сайта на Smasung galxy S22 в браузере Crome
+     status: fail
 ---
- - summary: |
+  - summary: |
      Проверка сайта на IPhone 14 в браузере Safari
      status: pass
+  - summary: |
+     Проверка сайта на IPhone 14 в браузере Safari
+      status: fail
 ---
 bugreports:
- - summary: |
+  - summary: |
       В меню категории появилась пустая строка
     environment: |
       Google Chrome Версия 109.0.5414.120 (Официальная сборка) (64 бит) Windows 11
@@ -39,6 +61,6 @@ bugreports:
       2. Жмем на кнопку "категории"
     expected-result: |
       НЕТ пустой строки
-    actual-result: |
+   actual-result: |
       Есть пустая строка
       
