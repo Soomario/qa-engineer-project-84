@@ -1,5 +1,159 @@
 ---
 - summary:  |
     Проверка входа пользователя с существующими логином и паролем
-- requirement: |
-    При верном 
+  requirement: |
+    При верном логине и пароле пользователь зайдет в систему
+  prerequisites: |
+  Открыта страница Авторизации
+  test-data: |
+  Логин = Somario Пароль = E1tuJo25
+  steps: | 
+  - Вводим Логин
+  - Вводим Пароль
+  - Нажимаем кнопку "Войти"
+  expected-result: |
+  Пользователь попадает на главную страницу
+  
+  - summary: |
+    Проверка входа пользователя с несуществующими логином и паролем
+  requirement: |
+    При неправильном логине или пароле пользователь должен получить сообщение об ошибке
+  prerequisites:
+    Открыта страница логина
+  test-data: |
+    Логин = Логин = Sont Пароль = 123321
+  steps:
+    - Вводим логин
+    - Вводим пароль
+    - Нажимаем кнопку "Войти"
+  expected-result: |
+    Пользователь должен попасть на главную страницу
+    ---
+    - summary: |
+    Проверка фильтра по цене
+    requirement: |
+    При вводе конкретных чисел в фильтр, сайт выдаст интересующий результат
+    prerequisites: |
+    Открыта страница с фильтром
+    test-data: |
+    From 100 To 200
+    steps: |
+    - Вводом первое число 
+    - Вводим второе число
+     expected-result: |
+     Сайт покажет пользователю товар отфильтрованный по цене
+     
+     - summary: |
+     Проверка фильтра сайта на отсутствующие числа 
+     requirement: |
+     При вводе отсутствующих значений пользователь должен получить сообщения "Ничего не найдено!"
+     prerequisites:
+     Открыта страница с фильтром
+     test-data: |
+     From 8888888 to 8888888888
+     steps: |
+     - Вводим первое число 
+     - Вводим второе число
+      expected-result: |
+      Сайт покажет пользователю сообщение "Ничего не найдено!"
+      ---
+       - summary: |
+     Проверка сайта на последней версией Crome 
+     requirement: |
+    Сайт корректно отоброжается в последней версии Crome 
+     prerequisites:
+     Открыта последняя версия браузера Crome
+     test-data: |
+    Crome Lattest 109
+     steps: |
+     - Открываем браузер Crome
+     - Вводим в адресную строку https://hexlet-products-store.vercel.app/
+     - жмем "Enter"
+      expected-result: |
+      - Успешно зашли на сайт 
+      - Сайт отоброжается
+      
+      - summary: |
+     Проверка сайта на последней версией Crome 
+     requirement: |
+    Сайт не отоброжается в последней версии Crome
+     prerequisites:
+     Открыта последняя версия браузера Crome
+     test-data: |
+    Crome Lattest 109
+     steps: |
+     - Открываем браузер Crome  
+     - Вводим в адресную строку https://hexlet-products-store.vercel.app/
+     - жмем "Enter"
+      expected-result: |
+      - Сайт не отоброжается
+   ---
+     - summary: |
+     Проверка сайта на последней версией Firefox
+     requirement: |
+    Сайт корректно отоброжается в последней версии Firefox 
+     prerequisites:
+     Открыта последняя версия браузера Firefox
+     test-data: |
+    Firefox Lattest 109
+     steps: |
+     - Открываем браузер Firefox 
+     - Вводим в адресную строку https://hexlet-products-store.vercel.app/
+     - жмем "Enter"
+      expected-result: |
+      - Успешно зашли на сайт 
+      - Сайт отоброжается
+      
+      - summary: |
+     Проверка сайта на последней версией Firefox 
+     requirement: |
+    Сайт не отоброжается в последней версии Firefox
+     prerequisites:
+     Открыта последняя версия браузера Firefox
+     test-data: |
+    Firefox Lattest 109
+     steps: |
+     - Открываем браузер Firefox
+     - Вводим в адресную строку https://hexlet-products-store.vercel.app/
+     - жмем "Enter"
+      expected-result: |
+      - Сайт не отоброжается
+      ---
+      - summary: |
+     Проверка сайта на последней версией Opera
+     requirement: |
+    Сайт корректно отоброжается в последней версии Opera 
+     prerequisites:
+     Открыта последняя версия браузера Opera
+     test-data: |
+    Opera Lattest 94
+     steps: |
+     - Открываем браузер Opera 
+     - Вводим в адресную строку https://hexlet-products-store.vercel.app/
+     - жмем "Enter"
+      expected-result: |
+      - Успешно зашли на сайт 
+      - Сайт отоброжается
+      
+      - summary: |
+     Проверка сайта на последней версией Opera
+     requirement: |
+    Сайт не отоброжается в последней версии Opera
+     prerequisites:
+     Открыта последняя версия браузера Opera
+     test-data: |
+    Opera Lattest 94
+     steps: |
+     - Открываем браузер Opera 
+     - Вводим в адресную строку https://hexlet-products-store.vercel.app/
+     - жмём "Enter"
+      expected-result: |
+      - Сайт не отоброжается
+      ---
+    
+    
+     
+     
+     
+     
+    
