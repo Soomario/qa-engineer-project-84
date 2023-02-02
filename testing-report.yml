@@ -1,0 +1,21 @@
+---
+- summary: |
+ Проверка входа пользователя с существующими логином и паролем
+ status: fail
+---
+- summary: |
+  Проверка фильтра по цене
+ status: pass
+ - summary: |
+  Проверка фильтра сайта на отсутствующие числа
+  status: pass
+  ---
+  - summary: |
+  Проверка сайта на последней версии Crome
+  status: pass
+  - summary: |
+  Проверка сайта на последней версии Firefox
+  status: pass
+  - summary: |
+    Проверка сайта на последней версии Opera
+   status: pass
