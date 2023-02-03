@@ -1,54 +1,54 @@
 ---
 test-cases:
- - summary: |
+  - summary: |
     Проверка успешной авторизации с существующими логином и паролем
     status: fail
     
- - summary: |
+  - summary: |
     Проверка успешной авторизацией с несуществующими логином и паролем
     status: fail
     
- - summary: |
+  - summary: |
     Проверка фильтра по цене
     status: pass
     
- - summary: |
+  - summary: |
      Проверка фильтра сайта на отсутствующие числа
      status: pass
      
- - summary: |
+  - summary: |
      Проверка сайта на последней версией Crome
      status: pass
      
- - summary: |
+  - summary: |
      Проверка сайта на последней версией Crome
      status: fail
      
- - summary: |
+  - summary: |
      Проверка сайта на последней версией Firefox
      status: pass
- - summary: |
+  - summary: |
      Проверка сайта на последней версией Firefox
      status: fail
      
- - summary: |
+  - summary: |
      Проверка сайта на последней версией Opera
       status: pass
- - summary: |
+  - summary: |
      Проверка сайта на последней версией Opera
       status: fail
       
- - summary: |
+  - summary: |
      Проверка сайта на Smasung galxy S22 в браузере Crome
      status: pass
- - summary: |
+  - summary: |
      Проверка сайта на Smasung galxy S22 в браузере Crome
      status: fail
 
- - summary: |
+  - summary: |
      Проверка сайта на IPhone 14 в браузере Safari
      status: pass
- - summary: |
+  - summary: |
      Проверка сайта на IPhone 14 в браузере Safari
       status: fail
    
