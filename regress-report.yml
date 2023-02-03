@@ -71,7 +71,7 @@ test-cases:
   - summary: |   
      Проверка сайта на IPhone 14 в браузере Safari
     status: fail
-   
+ ---  
   bugreports:
   - summary: |
       В разделе категории появилась пустая строка
