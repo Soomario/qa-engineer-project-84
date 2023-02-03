@@ -1,5 +1,6 @@
 ---
-- summary: |
+test-cases:
+  - summary: |
     Проверка успешной авторизации с существующими логином и паролем
     status: fail
     
@@ -50,7 +51,5 @@
   - summary: |
      Проверка сайта на IPhone 14 в браузере Safari
       status: fail
----      
+   
   bugreports: []
-  
-      
