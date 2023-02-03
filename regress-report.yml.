@@ -1,12 +1,12 @@
 ---
- - summary:  |
+- summary: |
     Проверка успешной авторизации с существующими логином и паролем
     status: fail
     
   - summary: |
     Проверка успешной авторизацией с несуществующими логином и паролем
     status: fail
----
+    
   - summary: |
     Проверка фильтра по цене
     status: pass
@@ -14,7 +14,7 @@
   - summary: |
      Проверка фильтра сайта на отсутствующие числа
      status: pass
----
+     
   - summary: |
      Проверка сайта на последней версией Crome
      status: pass
@@ -22,35 +22,35 @@
   - summary: |
      Проверка сайта на последней версией Crome
      status: fail
----
+     
   - summary: |
      Проверка сайта на последней версией Firefox
      status: pass
   - summary: |
      Проверка сайта на последней версией Firefox
      status: fail
----
+     
   - summary: |
      Проверка сайта на последней версией Opera
       status: pass
   - summary: |
      Проверка сайта на последней версией Opera
       status: fail
----
+      
   - summary: |
      Проверка сайта на Smasung galxy S22 в браузере Crome
      status: pass
   - summary: |
      Проверка сайта на Smasung galxy S22 в браузере Crome
      status: fail
----
+
   - summary: |
      Проверка сайта на IPhone 14 в браузере Safari
      status: pass
   - summary: |
      Проверка сайта на IPhone 14 в браузере Safari
       status: fail
----
+---      
 bugreports:
   - summary: |
       В меню категории появилась пустая строка
@@ -63,7 +63,7 @@ bugreports:
       НЕТ пустой строки
    actual-result: |
       Есть пустая строка
-  ---     
+    
   - summary: |
     Поплыла верстка в разделе "Корзина"
     environment: |
