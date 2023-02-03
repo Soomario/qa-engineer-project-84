@@ -1,0 +1,69 @@
+---
+ - summary: |
+  Проверка входа пользователя с существующими логином и паролем
+  status: fail
+  
+ - summary: |
+    Проверка входа пользователя с несуществующими логином и паролем
+  status: fail
+ 
+ - summary: |
+    Проверка фильтра по цене
+   status: pass
+   
+ - summary: |
+    Проверка фильтра по цене
+   status: fail
+   
+ - summary: |
+     Проверка сайта на последней версией Crome
+    status: pass
+    
+ - summary: |
+    Проверка сайта на последней версией Crome
+   status: fail
+ 
+ - summary: |
+     Проверка сайта на последней версией Firefox
+     status: pass
+ - summary: |
+     Проверка сайта на последней версией Firefox
+    status: fail
+ 
+ - summary: |
+     Проверка сайта на последней версией Opera
+    status: pass
+    
+ - summary: |
+     Проверка сайта на последней версией Opera
+    status: fail
+    
+ - summary: |
+      Проверка сайта на Smasung galxy S22 в браузере Crome
+     status: pass
+     
+ - summary: |
+      Проверка сайта на Smasung galxy S22 в браузере Crome
+     status: fail
+     
+ - summary: |
+      Проверка сайта на IPhone 14 в браузере Safari
+     status: pass
+    
+ - summary: |
+      Проверка сайта на IPhone 14 в браузере Safari
+     status: fail
+    
+    bugreports:
+ - summary: |
+      В категориях пустая строка
+   environment: |
+      Версия 109.0.5414.120 (Официальная сборка) (64 бит) Windows11
+   steps-to-reproduce: |
+      1. Заходим на страницу сайта
+      2. Жмем на кнопку категори
+      3. Видим пустую строку
+   expected-result: |
+      Нет пустой строки
+    actual-result: |
+      Есть пустая строка
