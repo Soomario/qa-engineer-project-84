@@ -12,7 +12,7 @@ test-cases:
     Проверка фильтра по цене
     status: pass
    
-   - summary: |
+  - summary: |
     Проверка фильтра по цене
     status: fail
     
@@ -28,7 +28,7 @@ test-cases:
      Проверка сайта на последней версией Crome
      status: pass
     
-   - summary: |
+  - summary: |
      Проверка сайта на последней версией Crome
      status: fail
      
@@ -52,7 +52,7 @@ test-cases:
      Проверка сайта на Smasung galxy S22 в браузере Crome
      status: pass
  
-   - summary: |
+  - summary: |
      Проверка сайта на Smasung galxy S22 в браузере Crome
      status: fail
 
@@ -60,7 +60,7 @@ test-cases:
      Проверка сайта на IPhone 14 в браузере Safari
      status: pass
    
-   - summary: |   
+  - summary: |   
      Проверка сайта на IPhone 14 в браузере Safari
      status: fail
    
@@ -69,22 +69,22 @@ test-cases:
       В разделе категории появилась пустая строка
    environment: |
       Google Chrome Версия 109.0.5414.120 (Официальная сборка) (64 бит) Windows 11
-   steps-to-reproduce: |
+ steps-to-reproduce: |
      1. нажимаем на кнопку "категории" 
    expected-result: |
      Нет лишней строки
-    actual-result: |
+  actual-result: |
      Есть лишняя строка
      
      - summary: |
     Поплыла верстка в разделе "Корзина"
-  environment: |
+environment: |
     Google Chrome Версия 109.0.5414.120 (Официальная сборка) (64 бит) Windows 11
-  steps-to-reproduce: |
+steps-to-reproduce: |
     1. Заходим на главную страницу магазина 
     2. Добовляем в корзину 5-10 товаров 
     3. Переходим в корзину
-  expected-result: |
+expected-result: |
     Колличество добавленных товаров идут в один столбец
  actual-result: |
     Колличество добавленных товаров идут в разнобой
