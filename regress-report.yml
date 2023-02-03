@@ -72,14 +72,4 @@ test-cases:
      Проверка сайта на IPhone 14 в браузере Safari
     status: fail
     
-  bugreports:
-  - summary: |
-      В разделе категории появилась пустая строка
-environment: |
-      Google Chrome Версия 109.0.5414.120 (Официальная сборка) (64 бит) Windows 11
- steps-to-reproduce: |
-     1. нажимаем на кнопку категории 
-expected-result: |
-     Нет лишней строки
-  actual-result: |
-     Есть лишняя строка
+  bugreports: []
