@@ -59,7 +59,7 @@ test-cases:
   - summary: |
      Проверка сайта на Smasung galxy S22 в браузере Crome
     status: pass
-     
+ 
   - summary: |
      Проверка сайта на Smasung galxy S22 в браузере Crome
     status: fail
@@ -71,7 +71,7 @@ test-cases:
   - summary: |   
      Проверка сайта на IPhone 14 в браузере Safari
     status: fail
-  
+
   bugreports:
   - summary: |
       В разделе категории появилась пустая строка
@@ -83,7 +83,7 @@ expected-result: |
      Нет лишней строки
   actual-result: |
      Есть лишняя строка
-     
+    
   - summary: |
     Поплыла верстка в разделе Корзина
 environment: |
