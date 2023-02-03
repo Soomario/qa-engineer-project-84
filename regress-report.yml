@@ -1,9 +1,8 @@
 ---
 test-cases:
-   - summary |
+  - summary: |
     Проверка успешной авторизации с существующими логином и паролем
-    status: fail
-    
+    status: fail  
   - summary: |
     Проверка успешной авторизацией с несуществующими логином и паролем
     status: fail
@@ -11,7 +10,6 @@ test-cases:
   - summary: |
     Проверка фильтра по цене
     status: pass
-   
   - summary: |
     Проверка фильтра по цене
     status: fail
@@ -19,7 +17,6 @@ test-cases:
   - summary: |
      Проверка фильтра сайта на отсутствующие числа
      status: pass
-  
   - summary: |
      Проверка фильтра сайта на отсутствующие числа
      status: fail
@@ -27,7 +24,6 @@ test-cases:
   - summary: |
      Проверка сайта на последней версией Crome
      status: pass
-    
   - summary: |
      Проверка сайта на последней версией Crome
      status: fail
@@ -35,7 +31,6 @@ test-cases:
   - summary: |
      Проверка сайта на последней версией Firefox
      status: pass
- 
   - summary: |
      Проверка сайта на последней версией Firefox
      status: fail
@@ -43,7 +38,6 @@ test-cases:
   - summary: |
      Проверка сайта на последней версией Opera
       status: pass
-  
   - summary: |
      Проверка сайта на последней версией Opera
       status: fail
@@ -51,7 +45,6 @@ test-cases:
   - summary: |
      Проверка сайта на Smasung galxy S22 в браузере Crome
      status: pass
- 
   - summary: |
      Проверка сайта на Smasung galxy S22 в браузере Crome
      status: fail
@@ -59,7 +52,6 @@ test-cases:
   - summary: |
      Проверка сайта на IPhone 14 в браузере Safari
      status: pass
-   
   - summary: |   
      Проверка сайта на IPhone 14 в браузере Safari
      status: fail
