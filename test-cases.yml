@@ -14,7 +14,7 @@
   expected-result: |
   Пользователь попадает на главную страницу
   
-  - summary: |
+- summary: |
     Проверка входа пользователя с несуществующими логином и паролем
   requirement: |
     При неправильном логине или пароле пользователь должен получить сообщение об ошибке
@@ -28,8 +28,8 @@
     - Нажимаем кнопку "Войти"
   expected-result: |
     Пользователь должен попасть на главную страницу
-    ---
-    - summary: |
+   
+- summary: |
     Проверка фильтра по цене
     requirement: |
     При вводе конкретных чисел в фильтр, сайт выдаст интересующий результат
@@ -43,7 +43,7 @@
      expected-result: |
      Сайт покажет пользователю товар отфильтрованный по цене
      
-     - summary: |
+- summary: |
      Проверка фильтра сайта на отсутствующие числа 
      requirement: |
      При вводе отсутствующих значений пользователь должен получить сообщения "Ничего не найдено!"
@@ -55,9 +55,9 @@
      - Вводим первое число 
      - Вводим второе число
       expected-result: |
-      Сайт покажет пользователю сообщение "Ничего не найдено!"
-      ---
-       - summary: |
+      Сайт покажет пользователю сообщение "Ничего не найдено"
+      
+- summary: |
      Проверка сайта на последней версией Crome 
      requirement: |
     Сайт корректно отоброжается в последней версии Crome 
@@ -72,23 +72,8 @@
       expected-result: |
       - Успешно зашли на сайт 
       - Сайт отоброжается
-      
-      - summary: |
-     Проверка сайта на последней версией Crome 
-     requirement: |
-    Сайт не отоброжается в последней версии Crome
-     prerequisites:
-     Открыта последняя версия браузера Crome
-     test-data: |
-    Crome Lattest 109
-     steps: |
-     - Открываем браузер Crome  
-     - Вводим в адресную строку https://hexlet-products-store.vercel.app/
-     - жмем "Enter"
-      expected-result: |
-      - Сайт не отоброжается
-   ---
-     - summary: |
+
+- summary: |
      Проверка сайта на последней версией Firefox
      requirement: |
     Сайт корректно отоброжается в последней версии Firefox 
@@ -103,27 +88,12 @@
       expected-result: |
       - Успешно зашли на сайт 
       - Сайт отоброжается
-      
-      - summary: |
-     Проверка сайта на последней версией Firefox 
-     requirement: |
-    Сайт не отоброжается в последней версии Firefox
-     prerequisites:
-     Открыта последняя версия браузера Firefox
-     test-data: |
-    Firefox Lattest 109
-     steps: |
-     - Открываем браузер Firefox
-     - Вводим в адресную строку https://hexlet-products-store.vercel.app/
-     - жмем "Enter"
-      expected-result: |
-      - Сайт не отоброжается
-      ---
-      - summary: |
+
+- summary: |
      Проверка сайта на последней версией Opera
-     requirement: |
+requirement: |
     Сайт корректно отоброжается в последней версии Opera 
-     prerequisites:
+     prerequisites: |
      Открыта последняя версия браузера Opera
      test-data: |
     Opera Lattest 94
@@ -134,78 +104,87 @@
       expected-result: |
       - Успешно зашли на сайт 
       - Сайт отоброжается
-      
-      - summary: |
-     Проверка сайта на последней версией Opera
-     requirement: |
-    Сайт не отоброжается в последней версии Opera
-     prerequisites:
-     Открыта последняя версия браузера Opera
-     test-data: |
-    Opera Lattest 94
-     steps: |
-     - Открываем браузер Opera 
-     - Вводим в адресную строку https://hexlet-products-store.vercel.app/
-     - жмём "Enter"
-      expected-result: |
-      - Сайт не отоброжается
-      ---
-    - summary: |
+
+- summary: |
      Проверка сайта на Smasung galxy S22 в браузере Crome
-     requirement: |
+  requirement: |
      Сайт отоброжается на телефоне
-     prerequisites:
+  prerequisites: |
      Сайт открыт на Smasung galxy S22 в браузере Crome
-     test-data: |
+  test-data: |
     Smasung galxy S22 Версия андроид 12
-     steps: |
+  steps: |
      - Открываем браузер Crome 
      - Вводим в адресную строку https://hexlet-products-store.vercel.app/
      - жмём "Enter"
       expected-result: |
       - Сайт отоброжается
-      
-    - summary: |
-     Проверка сайта на Smasung galxy S22 в браузере Crome
-     requirement: |
-     Сайт не отоброжается на телефоне
-     prerequisites:
-     Сайт открыт на Smasung galxy S22 в браузере Crome
-     test-data: |
-    Smasung galxy S22 Версия андроид 12
-     steps: |
-     - Открываем браузер Crome 
-     - Вводим в адресную строку https://hexlet-products-store.vercel.app/
-     - жмём "Enter"
-      expected-result: |
-      - Сайт не отоброжается
-     --- 
-      - summary: |
+
+- summary: |
      Проверка сайта на IPhone 14 в браузере Safari
-     requirement: |
+  requirement: |
      Сайт отоброжается на телефоне
-     prerequisites:
+  prerequisites: |
      Сайт открыт на IPhone 14 в браузере Safari
-     test-data: |
+  test-data: |
      IPhone 14 Версия IOS 16
-     steps: |
+  steps: |
      - Открываем браузер Safari 
      - Вводим в адресную строку https://hexlet-products-store.vercel.app/
      - жмём "Enter"
-      expected-result: |
+  expected-result: |
       - Сайт отоброжается
-      
-      - summary: |
-     Проверка сайта на IPhone 14 в браузере Safari
-     requirement: |
-     Сайт не отоброжается на телефоне
-     prerequisites:
-     Сайт открыт на IPhone 14 в браузере Safari
-     test-data: |
-     IPhone 14 Версия IOS 16
-     steps: |
-     - Открываем браузер Safari 
-     - Вводим в адресную строку https://hexlet-products-store.vercel.app/
-     - жмём "Enter"
-      expected-result: |
-      - Сайт НЕ отоброжается
+
+- summary: |
+   Проверка Фильтра сайта по цвету
+  requirement: |
+    При выборе цвета фильтр сайта должен подобрать подходящий товар
+  prerequisites: |
+    Открыта главная страница сайта
+  test-data: |
+      empty
+  steps:
+    - Заходим на главную страницу сайта
+    - Переходим к фильтру
+    - выбираем цвет 
+    - нажимаем ввод
+  expected-result: |
+    Фильтр должен показать товары с выбранным цветом
+    
+- summary: |
+   Проверка добавления товара в корзину
+  requirement: |
+    При добавлении товара в корзину тот должен отобразиться там
+  prerequisites: |
+    Открыта главная страница сайта
+  test-data: |
+      empty
+  steps:
+    - Заходим на главную страницу сайта
+    - добавляем товар в корзину
+    - переходим в корзину 
+  expected-result: |
+    Добавленные товары должны отобразиться в корзине
+    
+    - summary: |
+   Проверка каталога товара с постраничным выводом
+  requirement: |
+    При просмотре каталога, товар весь отображается с постраничным выводом
+  prerequisites: |
+    Открыта Главная страница сайта
+  test-data: |
+      empty
+  steps:
+    - Заходим на главную страницу сайта
+    - Просматриваем каталог
+    - Просматриваем постраничный вывод товара
+  expected-result: |
+    Каталог должен корректно отобразиться 
+    
+    
+    
+    
+    
+    
+    
+    
