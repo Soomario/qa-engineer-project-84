@@ -5,13 +5,13 @@
     При верном логине и пароле пользователь зайдет в систему
   prerequisites: |
    Открыта страница Авторизации
- test-data: |
+  test-data: |
    Логин = Somario Пароль = E1tuJo25
- steps: | 
+  steps: | 
    - Вводим Логин
    - Вводим Пароль
    - Нажимаем кнопку "Войти"
- expected-result: |
+  expected-result: |
    Пользователь попадает на главную страницу
 
 - summary: |
@@ -54,7 +54,7 @@
   steps: |
    - Вводим первое число 
    - Вводим второе число
- expected-result: |
+  expected-result: |
     Сайт покажет пользователю сообщение "Ничего не найдено"
 
 - summary: |
@@ -101,7 +101,7 @@
     - Открываем браузер Opera 
     - Вводим в адресную строку https://hexlet-products-store.vercel.app/
     - жмем "Enter"
- expected-result: |
+  expected-result: |
     - Успешно зашли на сайт 
     - Сайт отоброжается
 
