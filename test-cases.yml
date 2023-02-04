@@ -91,7 +91,7 @@
 
 - summary: |
    Проверка сайта на последней версией Opera
- requirement: |
+  requirement: |
     Сайт корректно отоброжается в последней версии Opera 
   prerequisites: |
     Открыта последняя версия браузера Opera
