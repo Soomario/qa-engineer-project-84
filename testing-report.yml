@@ -1,21 +1,56 @@
 ---
 - summary: |
- Проверка входа пользователя с существующими логином и паролем
- status: fail
----
+    Проверка входа пользователя с существующими логином и паролем
+  status: fail
+ 
 - summary: |
-  Проверка фильтра по цене
- status: pass
- - summary: |
-  Проверка фильтра сайта на отсутствующие числа
+    Проверка фильтра по цене
   status: pass
-  ---
-  - summary: |
-  Проверка сайта на последней версии Crome
+
+- summary: |
+    Проверка фильтра сайта на отсутствующие числа
   status: pass
-  - summary: |
-  Проверка сайта на последней версии Firefox
+  
+- summary: |
+    Проверка сайта на последней версии Chrome
   status: pass
-  - summary: |
+  
+- summary: |
+    Проверка сайта на последней версии Firefox
+  status: pass
+  
+- summary: |
     Проверка сайта на последней версии Opera
-   status: pass
+  status: pass
+  
+- summary: |
+    Проверка сайта на Smasung galxy S22 в браузере Crome
+  status: pass
+  
+- summary: |
+    Проверка сайта на IPhone 14 в браузере Safari
+  status: pass
+  
+- summary: |
+    Проверка Фильтра сайта по цвету
+  status: fail
+  
+- summary: |
+    Проверка добавления товара в корзину
+  status: pass
+  
+- summary: |
+    Проверка каталога товара с постраничным выводом
+  status: pass  
+    
+- summary: |
+    Проверка переключения языка сайта  
+  status: pass
+  
+- summary: |
+    Проверка коректного перевода сайта
+  status: fail
+    
+- summary: |
+    Проверка коректного перевода сайта   
+  status: pass  
