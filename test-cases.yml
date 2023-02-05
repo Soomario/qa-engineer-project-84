@@ -7,7 +7,7 @@
     Открыта страница Авторизации
   test-data: |
     Логин = Somario Пароль = E1tuJo25
-  steps: |
+  steps:
     - Вводим Логин
     - Вводим Пароль
     - Нажимаем кнопку "Войти"
@@ -36,7 +36,7 @@
     Открыта страница с фильтром
   test-data: |
     From 100 To 200
-  steps: |
+  steps: 
     - Вводом первое число 
     - Вводим второе число
   expected-result: |
@@ -50,7 +50,7 @@
     Открыта страница с фильтром
   test-data: |
     From 8888888 to 8888888888
-  steps: |
+  steps: 
     - Вводим первое число 
     - Вводим второе число
   expected-result: |
@@ -64,7 +64,7 @@
     Открыта последняя версия браузера Crome
   test-data: |
     Crome Lattest 109
-  steps: |
+  steps: 
     - Открываем браузер Crome
     - Вводим в адресную строку https://hexlet-products-store.vercel.app/
     - жмем "Enter"
@@ -79,7 +79,7 @@
   prerequisites: Открыта последняя версия браузера Firefox
   test-data: |
     Firefox Lattest 109
-  steps: |
+  steps: 
     - Открываем браузер Firefox 
     - Вводим в адресную строку https://hexlet-products-store.vercel.app/
     - жмем "Enter"
@@ -95,7 +95,7 @@
     Открыта последняя версия браузера Opera
   test-data: |
     Opera Lattest 94
-  steps: |
+  steps: 
     - Открываем браузер Opera 
     - Вводим в адресную строку https://hexlet-products-store.vercel.app/
     - жмем "Enter"
@@ -111,7 +111,7 @@
     Сайт открыт на Smasung galxy S22 в браузере Crome
   test-data: |
     Smasung galxy S22 Версия андроид 12
-  steps: |
+  steps: 
     - Открываем браузер Crome 
     - Вводим в адресную строку https://hexlet-products-store.vercel.app/
     - жмём "Enter"
@@ -126,7 +126,7 @@
     Сайт открыт на IPhone 14 в браузере Safari
   test-data: |
     IPhone 14 Версия IOS 16
-  steps: |
+  steps: 
     - Открываем браузер Safari 
     - Вводим в адресную строку https://hexlet-products-store.vercel.app/
     - жмём "Enter"
